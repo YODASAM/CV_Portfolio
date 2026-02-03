@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sampath K Janipalli | 3DX & Teamcenter PLM Architect</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap');
+    
+    body { 
+      font-family: 'Inter', sans-serif; 
+      background-color: #0a1f14; /* deep rich green base */
+      color: #e0f2e9; /* light mint-greenish text for contrast */
+    }
+    .heading-font { font-family: 'Playfair Display', serif; }
+    
+    .hero-bg {
+      background-image: linear-gradient(rgba(10, 31, 20, 0.85), rgba(10, 31, 20, 0.85)), 
+                        url('https://images.unsplash.com/photo-1615529182904-14819c35db37?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80'); /* elegant dark emerald marble with gold veins */
+      background-size: cover;
+      background-position: center;
+    }
+    
+    .f1-section {
+      background-image: linear-gradient(rgba(15, 47, 31, 0.8), rgba(15, 47, 31, 0.8)), 
+                        url('https://media.formula1.com/image/upload/f_auto/c_fill,g_auto,q_auto,w_1920/v1700000000/fom-website/2023/Miscellaneous/ferrari-sf-24-2.webp');
+      background-size: cover;
+      background-position: center;
+    }
+    
+    .auto-section {
+      background-image: linear-gradient(rgba(26, 60, 46, 0.8), rgba(26, 60, 46, 0.8)), 
+                        url('https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=2070');
+      background-size: cover;
+    }
+    
+    .siemens-section {
+      background-image: linear-gradient(rgba(15, 47, 31, 0.8), rgba(15, 47, 31, 0.8)), 
+                        url('https://www.siemens.com/content/dam/internet/siemens-com/global/product-images/plm/teamcenter/teamcenter-hero.jpg');
+      background-size: cover;
+    }
+    
+    .nav-link:hover { color: #d4af37; transition: all 0.3s; } /* gold hover */
+    .project-card { 
+      background: rgba(26, 60, 46, 0.6);
+      backdrop-filter: blur(8px);
+      transition: all 0.4s; 
+    }
+    .project-card:hover { transform: translateY(-12px); box-shadow: 0 25px 50px -12px rgba(212,175,55,0.3); }
+    
+    .gold-text { color: #d4af37; }
+    .accent-border { border-color: #c9a96e; }
+  </style>
+</head>
+<body class="min-h-screen">
+
+  <!-- NAVBAR -->
+  <nav class="fixed top-0 w-full bg-[#0a1f14]/90 backdrop-blur-md z-50 border-b accent-border">
+    <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 bg-[#d4af37] text-[#0a1f14] rounded-full flex items-center justify-center text-xl font-bold heading-font">SKJ</div>
+        <span class="text-2xl font-semibold heading-font tracking-tight gold-text">Sampath Janipalli</span>
+      </div>
+      <div class="hidden md:flex gap-8 text-sm font-medium">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#portfolio" class="nav-link">Portfolio</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#feedback" class="nav-link">Testimonials</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+      <a href="#contact" class="bg-[#d4af37] text-[#0a1f14] px-6 py-3 rounded-full font-semibold hover:bg-[#c9a96e] transition">Get in Touch</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero-bg h-screen flex items-center pt-20">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h1 class="text-7xl md:text-8xl font-bold heading-font tracking-tighter mb-4 gold-text">Sampath K. Janipalli</h1>
+      <p class="text-3xl gold-text font-light mb-6">Senior 3DExperience & Teamcenter PLM Architect</p>
+      <p class="text-xl max-w-2xl mx-auto mb-10 opacity-90">18+ years delivering mission-critical PLM transformations for Formula 1 teams, Jaguar Land Rover, Bentley Motors, and major energy clients.</p>
+      <div class="flex gap-6 justify-center">
+        <a href="#portfolio" class="px-10 py-5 bg-[#d4af37] hover:bg-[#c9a96e] text-[#0a1f14] rounded-2xl font-semibold text-lg inline-flex items-center gap-3 transition">
+          View Portfolio <i class="fas fa-arrow-right"></i>
+        </a>
+        <a href="https://github.com/YODASAM" target="_blank" class="px-10 py-5 border accent-border hover:border-[#d4af37] rounded-2xl font-semibold text-lg inline-flex items-center gap-3 transition">
+          GitHub <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-24 bg-[#0f2f1f]">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16">
+      <div>
+        <h2 class="text-5xl font-bold heading-font mb-8 gold-text">Professional Profile</h2>
+        <p class="text-lg leading-relaxed opacity-90">
+          Certified 3DExperience Solution Architect with 18+ years in Dassault Systèmes PLM (ENOVIA, 3DX R2019x–R2024x), Teamcenter BMIDE, CAA RADE, EKL/MQL/JPO, Python/Selenium automation, and high-stakes migrations. Delivered complex transformations for McLaren, Mercedes, Haas, Renault/Alpine, JLR, Bentley, and energy sector leaders.
+        </p>
+        <p class="text-lg mt-6 opacity-90">UK work eligible • IIM Ahmedabad MBA • IIT Madras B.Tech</p>
+      </div>
+      <div class="bg-[#1a3c2e] rounded-3xl p-10 accent-border border">
+        <div class="grid grid-cols-2 gap-8 text-center">
+          <div><span class="text-5xl font-bold gold-text">18</span><br><span class="text-sm opacity-70">Years Experience</span></div>
+          <div><span class="text-5xl font-bold gold-text">5</span><br><span class="text-sm opacity-70">F1 Teams Served</span></div>
+          <div><span class="text-5xl font-bold gold-text">7</span><br><span class="text-sm opacity-70">3DX Certifications</span></div>
+          <div><span class="text-5xl font-bold gold-text">12+</span><br><span class="text-sm opacity-70">Major Clients</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO / PROJECTS -->
+  <section id="portfolio" class="py-24">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-5xl font-bold heading-font text-center mb-16 gold-text">Key Engagements</h2>
+
+      <!-- F1 Racing Projects -->
+      <div class="f1-section rounded-3xl overflow-hidden mb-12">
+        <div class="p-12 md:p-20 bg-black/50">
+          <div class="text-[#d4af37] uppercase tracking-widest text-sm mb-4">Formula 1 Excellence</div>
+          <h3 class="text-4xl font-bold mb-8">McLaren • Mercedes • Haas • Renault/Alpine • Lotus</h3>
+          <div class="grid md:grid-cols-3 gap-6">
+            <div class="project-card p-6 rounded-2xl">
+              <p class="text-[#d4af37] text-sm">2012–2022</p>
+              <p class="font-semibold text-xl mt-2">3DX Developer & Migration Architect</p>
+              <p class="opacity-80 text-sm mt-4">EKL/MQL/JPO • XPDM→3DX migrations • Parallel tools • DEV/TEST/PROD protocols</p>
+            </div>
+            <div class="project-card p-6 rounded-2xl">
+              <p class="text-[#d4af37] text-sm">2021–2022</p>
+              <p class="font-semibold text-xl mt-2">Haas F1 – 3DX Custom Developer</p>
+              <p class="opacity-80 text-sm mt-4">6WTags • DMC attributes • EKL validation</p>
+            </div>
+            <div class="project-card p-6 rounded-2xl">
+              <p class="text-[#d4af37] text-sm">2019–2020</p>
+              <p class="font-semibold text-xl mt-2">Renault F1 – Migration Architect</p>
+              <p class="opacity-80 text-sm mt-4">Custom parallel migration engine • Jenkins CI/CD</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Automotive -->
+      <div class="auto-section rounded-3xl overflow-hidden mb-12">
+        <div class="p-12 md:p-20 bg-black/50">
+          <div class="text-[#d4af37] uppercase tracking-widest text-sm mb-4">Premium Automotive</div>
+          <h3 class="text-4xl font-bold mb-8">Jaguar Land Rover • Bentley Motors</h3>
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="project-card p-8 rounded-2xl">
+              <p class="font-semibold text-2xl">Jaguar Land Rover (2022–2024)</p>
+              <p class="text-[#d4af37]">3DX Technical Lead / Process Expert</p>
+              <ul class="mt-6 space-y-3 opacity-90">
+                <li>• 3DX–SAP MBOM integration</li>
+                <li>• Python Selenium BDD framework</li>
+                <li>• Extended Enterprise PnO</li>
+              </ul>
+            </div>
+            <div class="project-card p-8 rounded-2xl">
+              <p class="font-semibold text-2xl">Bentley Motors (2016–2019)</p>
+              <p class="text-[#d4af37]">PLM Solution Architect & Admin</p>
+              <ul class="mt-6 space-y-3 opacity-90">
+                <li>• CAA RADE C++/Java</li>
+                <li>• VW Group imports</li>
+                <li>• Mentoring & SOP creation</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Teamcenter -->
+      <div class="siemens-section rounded-3xl overflow-hidden">
+        <div class="p-12 md:p-20 bg-black/50">
+          <div class="text-[#d4af37] uppercase tracking-widest text-sm mb-4">Teamcenter PLM</div>
+          <h3 class="text-4xl font-bold mb-8">JUANA Limited – BMIDE & End-User Expert</h3>
+          <p class="text-2xl mb-10 opacity-90">Jul 2024 – Present</p>
+          <div class="grid md:grid-cols-3 gap-8 text-lg opacity-90">
+            <div>Deep Copy & Revision Rules</div>
+            <div>BOM / Variant Configuration</div>
+            <div>Workflow • GRM • ACL</div>
+            <div>Custom Objects & LOVs</div>
+            <div>Hot/Cold BMIDE Deployments</div>
+            <div>Complex Rule Setup</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="py-24 bg-[#0f2f1f]">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-5xl font-bold heading-font text-center mb-16 gold-text">Core Competencies</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-[#1a3c2e] rounded-3xl p-8 accent-border border">
+          <div class="text-[#d4af37] text-sm font-medium mb-3">EXPERT (4/4)</div>
+          <div class="space-y-6">
+            <div>CAA RADE V5/V6 (70 months)</div>
+            <div>ENOVIA LCA / V6 / 3DExperience (60+ months)</div>
+          </div>
+        </div>
+        <div class="bg-[#1a3c2e] rounded-3xl p-8 accent-border border">
+          <div class="text-[#d4af37] text-sm font-medium mb-3">ADVANCED (3.5/4)</div>
+          <div class="space-y-6">
+            <div>Python (Pandas, NumPy, Selenium, pyautogui) – 36 months</div>
+            <div>EKL, MQL/TCL, JPO – 6–8 months each</div>
+            <div>PowerShell & Shell Scripting – 20+ months</div>
+          </div>
+        </div>
+        <div class="bg-[#1a3c2e] rounded-3xl p-8 accent-border border">
+          <div class="text-[#d4af37] text-sm font-medium mb-3">STRONG (3/4)</div>
+          <div class="space-y-6">
+            <div>Jenkins • Git • CI/CD</div>
+            <div>AIX / Linux Administration – 45+ months</div>
+            <div>SAP Integration • Delmia Apriso</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="feedback" class="py-24">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-5xl font-bold heading-font text-center mb-16 gold-text">Client & Director Feedback</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-[#1a3c2e] rounded-3xl p-10 accent-border border">
+          <p class="italic text-lg leading-relaxed opacity-90">"Sam demonstrated exceptional problem-solving skills... cloning Application Assemblies was particularly complex and Sam delivered an outstanding solution."</p>
+          <div class="mt-10 flex items-center gap-4">
+            <div class="w-12 h-12 bg-[#d4af37] rounded-2xl"></div>
+            <div>
+              <div class="font-semibold gold-text">Engineering Head, F1</div>
+              <div class="text-sm opacity-70">2016–2019</div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-[#1a3c2e] rounded-3xl p-10 accent-border border">
+          <p class="italic text-lg leading-relaxed opacity-90">"Sam rose to every challenge. Exceptional initiative, team working and problem-solving skills. I often asked for his opinion even outside his core area."</p>
+          <div class="mt-10 flex items-center gap-4">
+            <div class="w-12 h-12 bg-[#d4af37] rounded-2xl"></div>
+            <div>
+              <div class="font-semibold gold-text">Project Lead</div>
+              <div class="text-sm opacity-70">2020–2022</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION (new) -->
+  <section id="contact" class="py-24 bg-[#0f2f1f]">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-5xl font-bold heading-font mb-12 gold-text">Get in Touch</h2>
+      <div class="bg-[#1a3c2e] rounded-3xl p-12 accent-border border max-w-2xl mx-auto">
+        <p class="text-2xl mb-8 opacity-90">I'm available for new opportunities in PLM architecture, 3DExperience / Teamcenter projects, or consulting.</p>
+        
+        <div class="space-y-6 text-lg">
+          <div class="flex items-center justify-center gap-4">
+            <i class="fas fa-phone-alt text-3xl gold-text"></i>
+            <div>
+              <p class="font-semibold">Mobile</p>
+              <p>+44 7863 449555</p>
+            </div>
+          </div>
+          
+          <div class="flex items-center justify-center gap-4">
+            <i class="fas fa-envelope text-3xl gold-text"></i>
+            <div>
+              <p class="font-semibold">Email</p>
+              <a href="mailto:jsampathkumar@gmail.com" class="hover:text-[#d4af37] transition">jsampathkumar@gmail.com</a>
+            </div>
+          </div>
+          
+          <div class="flex justify-center gap-10 mt-10 text-4xl">
+            <a href="https://github.com/YODASAM" target="_blank" class="hover:text-[#d4af37]"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/sampath-janipalli" target="_blank" class="hover:text-[#d4af37]"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#0a1f14] py-12 border-t accent-border text-center text-sm opacity-70">
+    <p>© 2026 Sampath K Janipalli • UK Work Eligible • Built for PLM Excellence</p>
+  </footer>
+
+  <!-- Smooth scroll behavior -->
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
